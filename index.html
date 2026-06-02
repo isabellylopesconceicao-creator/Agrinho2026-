@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador MIP e Polinizadores - Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulador MIP & Polinizadores</h1>
+            <p class="subtitle">Agro Forte e Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="status-card">
+                <h3>Safra Atual</h3>
+                <p id="safra-atual" class="numero">1 / 5</p>
+            </div>
+            <div class="status-card">
+                <h3>Produtividade</h3>
+                <p id="produtividade" class="numero">100%</p>
+            </div>
+            <div class="status-card">
+                <h3>Pragas na Lavoura</h3>
+                <p id="status-pragas" class="numero aviso">Normal</p>
+            </div>
+        </div>
+
+        <div class="bars-container">
+            <div class="bar-group">
+                <label>População de Abelhas (Polinizadores): <span id="txt-abelhas">100%</span></label>
+                <div class="progress-bar"><div id="bar-abelhas" class="fill verde" style="width: 100%;"></div></div>
+            </div>
+            <div class="bar-group">
+                <label>Inimigos Naturais (Joaninhas/Vespas): <span id="txt-predadores">100%</span></label>
+                <div class="progress-bar"><div id="bar-predadores" class="fill verde" style="width: 100%;"></div></div>
+            </div>
+        </div>
+
+        <div class="game-screen">
+            <p id="mensagem-diario">A sua lavoura está começando a sofrer com um ataque inicial de lagartas. Qual estratégia você vai adotar para esta safra?</p>
+        </div>
+
+        <div class="actions">
+            <button id="btn-quimico" class="btn btn-perigo">Uso Massivo de Químicos</button>
+            <button id="btn-mip" class="btn btn-sucesso">Manejo Integrado (MIP)</button>
+            <button id="btn-reiniciar" class="btn btn-neutro escondido">Reiniciar Simulação</button>
+        </div>
+
+        <footer>
+            <p>Projeto para o Concurso Agrinho 2026 • Ensino Médio</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
